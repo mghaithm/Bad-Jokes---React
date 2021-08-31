@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Joke from './Joke';
 import axios from 'axios'  
 import "./JokeList.css";
+import FlipMove from 'react-flip-move';
 
 export default class JokeList extends Component {
     static defaultProps = {
@@ -78,6 +79,7 @@ export default class JokeList extends Component {
                 </div>
 
                <div className="JokeList-jokes">
+               <FlipMove>
                    {jokes.map(j => (<Joke 
                    key={j.id} 
                    votes={j.votes} 
@@ -85,6 +87,8 @@ export default class JokeList extends Component {
                    upvote={() => this.handleVote(j.id, 1)}
                    downvote={() => this.handleVote(j.id, -1)}
                    />))}
+                 </FlipMove>
+                 
                </div>
             </div>
         )
