@@ -5,6 +5,11 @@ A simple React app that fetches jokes from the [icanhazdadjoke.com API](https://
 
 ---
 
+## 🖼️ Preview
+![Bad Jokes Preview](Preview.PNG)
+
+---
+
 ## ✨ Features
 - Fetches dad jokes from a public API.
 - Displays jokes with votes.
@@ -57,6 +62,3 @@ Open `http://localhost:3000` in your browser.
 - Writing clean, maintainable code with a focus on user experience.
 
 ---
-
-## 🖼️ Preview
-![Bad Jokes Preview](preview.png)
